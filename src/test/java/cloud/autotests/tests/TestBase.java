@@ -25,12 +25,12 @@ public class TestBase {
         DriverSettings.configure();
     }
 
-    @BeforeEach
-    void openMainPage() {
-        step("Open jetbrains.com", () -> {
-            open("");
-        });
-    }
+    //@BeforeEach
+   // void openMainPage() {
+    //    step("Open jetbrains.com", () -> {
+    //        open("");
+    //    });
+   // }
 
     @AfterEach
     public void addAttachments() {

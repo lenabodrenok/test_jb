@@ -16,7 +16,6 @@ public class GeneratedTests extends TestBase {
     @Test
     @DisplayName("Testing JetBrains Careers")
     void careersTest() {
-        Selenide.confirm();
         step("Open 'https://www.jetbrains.com/careers/jobs/'", () -> {
             open("https://www.jetbrains.com/careers/jobs/");
         });
@@ -36,7 +35,6 @@ public class GeneratedTests extends TestBase {
     @Test
     @DisplayName("Testing plugin search")
     void pluginSearchTest() {
-        Selenide.confirm();
         step("Open 'https://www.jetbrains.com/'", () -> {
             open("https://www.jetbrains.com/");
         });
@@ -57,7 +55,6 @@ public class GeneratedTests extends TestBase {
     @Test
     @DisplayName("Testing solutions for QA and Test Automation")
     void solutionsSearchTest() {
-        Selenide.confirm();
         step("Open 'https://www.jetbrains.com/'", () -> {
             open("https://www.jetbrains.com/");
         });
@@ -75,7 +72,6 @@ public class GeneratedTests extends TestBase {
     @Test
     @DisplayName("Page title should have header text")
     void titleTest() {
-        Selenide.confirm();
         step("Open url 'https://www.jetbrains.com/careers/jobs/'", () ->
             open("https://www.jetbrains.com/careers/jobs/"));
         step("Page title should have text 'Open Positions - JetBrains'", () -> {

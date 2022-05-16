@@ -1,22 +1,22 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
+import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byAttribute;
-import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 public class GeneratedTests extends TestBase {
 
-    @Test   // done
+    @Test
     @DisplayName("Testing JetBrains Careers")
     void careersTest() {
+        Selenide.confirm();
         step("Open 'https://www.jetbrains.com/careers/jobs/'", () -> {
             open("https://www.jetbrains.com/careers/jobs/");
         });
@@ -33,9 +33,10 @@ public class GeneratedTests extends TestBase {
         });
     }
 
-    @Test //done
+    @Test
     @DisplayName("Testing plugin search")
     void pluginSearchTest() {
+        Selenide.confirm();
         step("Open 'https://www.jetbrains.com/'", () -> {
             open("https://www.jetbrains.com/");
         });
@@ -54,8 +55,9 @@ public class GeneratedTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Testing Solutions for QA and Test Automation")
+    @DisplayName("Testing solutions for QA and Test Automation")
     void solutionsSearchTest() {
+        Selenide.confirm();
         step("Open 'https://www.jetbrains.com/'", () -> {
             open("https://www.jetbrains.com/");
         });
@@ -70,12 +72,12 @@ public class GeneratedTests extends TestBase {
         });
     }
 
-    @Test //done
+    @Test
     @DisplayName("Page title should have header text")
     void titleTest() {
+        Selenide.confirm();
         step("Open url 'https://www.jetbrains.com/careers/jobs/'", () ->
             open("https://www.jetbrains.com/careers/jobs/"));
-
         step("Page title should have text 'Open Positions - JetBrains'", () -> {
             String expectedTitle = "Open Positions - JetBrains";
             String actualTitle = title();
@@ -84,12 +86,11 @@ public class GeneratedTests extends TestBase {
         });
     }
 
-    @Test //done
+    @Test
     @DisplayName("Main page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url 'https://www.jetbrains.com/'", () ->
             open("https://www.jetbrains.com/"));
-
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";

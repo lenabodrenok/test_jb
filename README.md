@@ -1,3 +1,35 @@
+## Проект по тестированию сайта [JetBrains](https://www.jetbrains.com)
+
+### :ledger: Содержание
+- Tech stack
+- Реализованные проверки
+- Сборка в Jenkins
+- Запуск из терминала
+- Allure отчет
+- Интеграция с Allure TestOps
+- Интеграция с Jira
+- Отчет в Telegram
+- Видео примеры прохождения тестов
+
+//добавить ссылки
+- <a href="#shinto_shrine-технологии-и-инструменты">Технологии и инструменты</a> 
+- <a href="#shinto_shrine-реализованные-проверки">Реализованные проверки</a>
+- <a href="#shinto_shrine-сборка-в-Jenkins">Сборка в Jenkins</a>
+
+
+### :woman_technologist: Tech stack
+<p align="center">
+<a href="https://www.jetbrains.com/idea/"><img src="/images/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
+<a href="https://www.java.com/"><img src="/images/Java.svg" width="50" height="50"  alt="Java"/></a>
+<a href="https://github.com/"><img src="/images/Github.svg" width="50" height="50"  alt="Github"/></a>
+<a href="https://junit.org/junit5/"><img src="/images/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a>
+<a href="https://gradle.org/"><img src="/images/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>
+<a href="https://selenide.org/"><img src="/images/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
+<a href="https://aerokube.com/selenoid/"><img src="/images/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a>
+<a href="https://github.com/allure-framework/allure2"><img src="/images/Allure_EE.svg" width="50" height="50"  alt="Allure"/></a>
+<a href="https://www.jenkins.io/"><img src="/images/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
+</p>
+
 # Project in Allure TestOps with manual & automated tests
 <a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
 

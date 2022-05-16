@@ -19,18 +19,19 @@ public class GeneratedTests extends TestBase {
             open("https://www.jetbrains.com/careers/jobs/");
         });
 
-       // step("Set role 'QA Engineer'", () -> {
-      //      $("._wt-select__label-wrapper_5tvmu8_75").$(byText("Role")).click();
-      //      $(byText("QA Engineer")).click();
-     //   }); $("").sibling(1)
+        step("Set role 'QA Engineer'", () -> {
+            $$("._wt-select__label-wrapper_5tvmu8_75").findBy(text("Role")).click();
+            $$("._wt-list-item__content_qhmb27_10").findBy(text("QA Engineer")).click();
+        });
 
         step("Set location 'Remote'", () -> {
-            $("._wt-select__label-wrapper_5tvmu8_75", 1).$(byText("Location")).$("._wt-list-item__content_qhmb27_10").$(byText("Remote"));
-        }); //done
+            $$("._wt-select__label-wrapper_5tvmu8_75").findBy(text("Location")).click(); //done
+            $$("._wt-list-item__content_qhmb27_10").findBy(text("Remote")).click(); //done
+        });
 
-       // step("Check the search results 'QA Engineer'", () -> {
-            //$("#vacancies-list").$("div", 2).shouldHave(text("QA Engineer"));
-       // });
+        step("Check the search results 'QA Engineer'", () -> {
+            $("#vacancies-list").$(".wt-h3").shouldHave(text("QA Engineer"));
+        });
     }
 
     @Test //done

@@ -1,23 +1,15 @@
 ## Проект по тестированию сайта [JetBrains](https://www.jetbrains.com)
 
 ### :ledger: Содержание
-- Tech stack
-- Реализованные проверки
-- Сборка в Jenkins
-- Запуск из терминала
-- Allure отчет
-- Интеграция с Allure TestOps
-- Интеграция с Jira
-- Отчет в Telegram
-- Видео примеры прохождения тестов
+- [Технологический стек](#технологический-стек)
+- [Реализованные проверки](#реализованные-проверки)
+- [Запуск тестов из терминала](#запуск-тестов-из-терминала)
+- [Сборка в Jenkins](#сборка-в-jenkins)
+- [Allure отчет](#allure-отчет)
+- [Уведомления в Telegram с использованием бота](#уведомления-в-telegram-с-использованием-бота)
+- [Пример запуска теста в Selenoid](#пример-запуска-теста-в-selenoid)
 
-//добавить ссылки
-- <a href="#shinto_shrine-технологии-и-инструменты">Технологии и инструменты</a> 
-- <a href="#shinto_shrine-реализованные-проверки">Реализованные проверки</a>
-- <a href="#shinto_shrine-сборка-в-Jenkins">Сборка в Jenkins</a>
-
-
-### :woman_technologist: Tech stack
+### :heavy_check_mark: Технологический стек <a name="технологический-стек"></a>
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img src="/images/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA"/></a>
 <a href="https://www.java.com/"><img src="/images/Java.svg" width="50" height="50"  alt="Java"/></a>
@@ -30,47 +22,23 @@
 <a href="https://www.jenkins.io/"><img src="/images/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>
 </p>
 
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
+### :heavy_check_mark: Реализованные проверки <a name="реализованные-проверки"></a>
+- Проверка окрытых вакансий QA Engineer в разделе Careers  
+- Проверка поиска плагинов в Marketplace  
+- Проверка поиска решений для автоматического тестирования  
+- Проверка наличия заголовка страницы в разделе Careers  
+- Проверка отсутствия ошибок в консоли браузера  
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+### :heavy_check_mark: Запуск тестов из терминала <a name="запуск-тестов-из-терминала"></a>
 
+### :heavy_check_mark: Сборка в Jenkins <a name="сборка-в-jenkins"></a>
 
-# USAGE examples
+### :heavy_check_mark: Allure отчет <a name="allure-отчет"></a>
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Главный экран отчета  
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Страница с проведенными тестами  
+#### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Основной дашборд  
 
-### For run remote tests need fill remote.properties or to pass value:
+### :heavy_check_mark: Уведомления в Telegram с использованием бота <a name="уведомления-в-telegram-с-использованием-бота"></a>
 
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
+### :heavy_check_mark: Пример запуска теста в Selenoid <a name="пример-запуска-теста-в-selenoid"></a>
 
-
-Run tests with filled remote.properties:
-```bash
-gradle clean test
-```
-
-Run tests with not filled remote.properties:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
-
-Serve report:
-```bash
-allure serve build/allure-results
-```
-
-
-###### For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
-```
-
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
